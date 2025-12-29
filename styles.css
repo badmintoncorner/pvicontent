@@ -67,7 +67,7 @@ background-color: #ffffff;
         background-color: #f3f3f3;border: 1px solid #bbbbbb;margin-left: 16px;margin-right: 16px;color: #333333;padding: 20px;border-bottom: none;
     }
     .coursemedia {
-        border: 1px solid #bbbbbb;margin-left: 16px;margin-right: 16px;padding: 16px;padding-left: 16px;
+        border: 1px solid #bbbbbb;margin-left: 16px;margin-right: 16px;padding: 16px;padding-left: 16px;cursor: pointer;
     }
 
     .coursemedia:hover {
