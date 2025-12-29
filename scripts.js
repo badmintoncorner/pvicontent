@@ -69,24 +69,20 @@ function move(el, value) {
   });
 }
 
-function correct(btn) {
-  btn.style.color = "#339d33";
+function crt(btn) {
+  btn.style.setProperty("color", "#339d33", "important");
 
   const siblings = btn.parentElement.querySelectorAll("button");
   siblings.forEach(b => {
-    if (b !== btn) {
-      b.disabled = true;
-    }
+    if (b !== btn) b.disabled = true;
   });
 }
 
-function incorrect(btn) {
-  btn.style.color = "#e5326f";
+function incrt(btn) {
+  btn.style.setProperty("color", "#e5326f", "important");
 
   const siblings = btn.parentElement.querySelectorAll("button");
   siblings.forEach(b => {
-    if (b !== btn) {
-      b.disabled = true;
-    }
+    if (b !== btn) b.disabled = true;
   });
 }
