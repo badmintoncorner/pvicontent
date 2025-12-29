@@ -168,3 +168,15 @@ cursor: pointer; margin-left: 10px;
 input[type="radio"] {
   accent-color: var(--accentcolor);
 }
+
+.d5 {
+    height: 5px;
+}
+
+.d10 {
+    height: 10px;
+}
+
+.d20 {
+    height: 20px;
+}
