@@ -164,3 +164,7 @@ cursor: pointer; margin-left: 10px;
 .mr-8 {
     margin-right: 8px;
 }
+
+input[type="radio"] {
+  accent-color: var(--accentcolor);
+}
