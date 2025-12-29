@@ -70,8 +70,7 @@ function move(el, value) {
 }
 
 function correct(btn) {
-  btn.style.backgroundColor = "#339d33";
-  btn.style.color = "#fff";
+  btn.style.color = "#339d33";
 
   const siblings = btn.parentElement.querySelectorAll("button");
   siblings.forEach(b => {
@@ -82,8 +81,7 @@ function correct(btn) {
 }
 
 function incorrect(btn) {
-  btn.style.backgroundColor = "#e5326f";
-  btn.style.color = "#fff";
+  btn.style.color = "#e5326f";
 
   const siblings = btn.parentElement.querySelectorAll("button");
   siblings.forEach(b => {
