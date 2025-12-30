@@ -1,0 +1,241 @@
+<html><head><title>MyPVI Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://badmintoncorner.github.io/pvicontent/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+</head><body>
+
+
+
+<div id="dashboard" class="pvisite" style="display: none;">
+    <div class="w3-sidebar w3-bar-block w3-animate-left w3-card" style="width: 320px; height: 100%; overflow-y: auto; background-color: rgb(255, 255, 255); margin-left: 85px; border-radius: 0px 16px 16px 0px; display: none;" id="courses" onclick="document.getElementById('courses').style.display='none'">
+  
+  
+<div class="w3-right navbtn w3-round" style="margin: 12px;padding: 8px;"><i class="bi bi-x" style="font-size: 22px;color: #222222;"></i></div><h4 style="font-weight: 600;margin-bottom: 8px;" class="w3-margin">Courses</h4>
+<hr class="w3-margin" style="border-color: #e1e1e1;"><h6 class="w3-margin" style="font-weight: 600;">Published Courses</h6>
+  
+  
+
+<p style="display: block;" class="coursestab" id="crstab-nodata">No published courses available.</p><article class="coursestab" id="crstab-raphael" style="display: none;"><div style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 16px;" class="navbtn" onclick="openDB('philosophy11-course')">
+    <h6><a style="color: var(--accentcolor);">Philosophy 11</a>
+<br><span style="font-size: 13px;color: #737272;">AY 25-26 1stSem_SHS</span></h6>
+</div></article></div><div class="w3-sidebar w3-bar-block w3-animate-left" style="width: 85px; background-color: rgb(246, 246, 246); height: 100%; overflow-y: auto; display: block;" id="sdbr">
+  
+  
+<div class="navbtn w3-round w3-left w3-margin w3-hide-large" style="padding: 8px;" onclick="sdbr_close()"><i class="bi bi-x" style="font-size: 24px;color: #222222;"></i></div><h1 style="text-align:center;margin-top: 10px;"><img src="https://badmintoncorner.github.io/pvicontent/pvilogo2.png" style="width: 85%;" class="w3-hide-small" ondblclick="openPVI('landing')"></h1><div class="w3-bar-item w3-button hover-smooth" style="padding: 2px;">
+    <h6 style="text-align:center;font-size: 14px;"><img src="https://badmintoncorner.github.io/pvicontent/images/ppdefault.png" style="height: 30px; width: 30px; object-fit: cover; margin-bottom: 2px; border-radius: 100%; border: 1.5px solid rgb(0, 56, 130);" class="pp">
+<br class="lbl" style="display: block;"><span class="lbl" style="display: block;">User</span></h6></div>
+  
+  
+<div class="w3-bar-item nv navbtn hover-smooth nbselected" onclick="openDB('dsbhrd'),nv(),document.getElementById('nbdash').classList.add('nbselected'),document.getElementById('courses').style.display='none'" id="nbdash" style="padding: 2px;">
+    <h6 style="text-align:center;font-size: 14px;color:inherit;"><i class="bi bi-speedometer2 navicons" style="font-size: 26px; color: inherit;"></i>
+<br class="lbl" style="display: block;"><span style="color: inherit; display: block;" class="lbl">Dashboard</span></h6></div><div class="w3-bar-item nv navbtn" onclick="document.getElementById('courses').style.display='block',nv(),document.getElementById('nbcourse').classList.add('nbselected')" style="padding: 2px;" id="nbcourse">
+    <h6 style="text-align:center;font-size: 14px;color:inherit;"><i class="bi bi-journal-bookmark-fill navicons" style="font-size: 26px; color: inherit;"></i>
+<br class="lbl" style="display: block;"><span style="color: inherit; display: block;" class="lbl">Courses</span></h6></div>
+
+<div class="w3-bar-item nv navbtn" onclick="openDB('calendar'),nv(),document.getElementById('nbcalendar').classList.add('nbselected'),document.getElementById('courses').style.display='none',date()" style="padding: 2px;" id="nbcalendar">
+    <h6 style="text-align:center;font-size: 14px;color:inherit;"><i class="bi bi-calendar3 navicons" style="font-size: 26px; color: inherit;"></i>
+<br class="lbl" style="display: block;"><span style="color: inherit; display: block;" class="lbl">Calendar</span></h6></div><div class="w3-bar-item nv navbtn" onclick="openDB('inbox'),nv(),document.getElementById('nbinbox').classList.add('nbselected'),document.getElementById('courses').style.display='none'" style="padding: 2px;" id="nbinbox">
+    <h6 style="text-align:center;font-size: 14px;color:inherit;"><i class="bi bi-mailbox navicons" style="font-size: 26px; color: inherit;"></i>
+<br class="lbl" style="display: block;"><span style="color: inherit; display: block;" class="lbl">Inbox</span></h6></div>
+
+<div class="w3-bottom nv navbtn" style="padding: 2px; width: 85px; display: block; margin-bottom: 50px;" id="abshrt" onclick="minimize()">
+    <h6 style="text-align:center;font-size: 14px;color:inherit;animation: 0.2s flipB"><i class="bi bi-arrow-bar-left" style="font-size: 24px;color:inherit;"></i>
+</h6></div><div class="w3-bottom nv navbtn" style="padding: 2px; width: 55px; display: none; margin-bottom: 50px;" id="ablngt" onclick="maximize()">
+    <h6 style="text-align:center;font-size: 14px;color:inherit;animation: 0.2s flipA"><i class="bi bi-arrow-bar-right" style="font-size: 24px;color:inherit;"></i>
+</h6></div></div><div class="w3-main" style="margin-left: 85px;" id="main">
+<div style="background-color: #162135;position: fixed;top: 0;width: 100%;" class="w3-hide-large">
+  <div class="navbtn w3-round w3-margin nbxz" style="color:white;position: fixed;top: 12px;left: 20px;padding: 8px;" onclick="sdbr_open()"><i class="bi bi-list" style="color: white;font-size: 24px;"></i></div>
+
+<h1 style="text-align:center;margin: 0px;" class="w3-padding-16"><img src="https://badmintoncorner.github.io/pvicontent/pvilogo2.png" style="width: 70px;"></h1>
+
+  
+</div>
+
+<div style="height: 101.92px;" class="w3-hide-large"></div><section class="w3-container dbcontent load-anim" id="dsbhrd" style="display: block;">
+  <div class="w3-row">
+    <div class="w3-threequarter"><div style="border: 1.5px solid var(--accentcolor);display: none;" class="card mlgin"><section style="display: flex;"><div style="background-color: var(--accentcolor);padding-top:18px;padding-bottom: 18px;padding-left: 10px;padding-right: 10px;color: white;"><i class="bi bi-info-circle" style="font-size: 24px;color: inherit;"></i>
+</div>
+<div style="margin: 10px;">
+    <b style="font-size: 20px;">PVI Portal Updates</b>
+    <div style="height: 10px;"></div><h6>The student LMS portal is still under development, some areas may still be inaccessible.</h6></div></section></div><h1 class="w3-margin">Dashboard</h1><hr class="mlgin"><p style="display: block;" class="dashboardcourses mlgin" id="dsbcrs-nodata">No published courses available.</p><article class="dashboardcourses" id="dsbcrs-raphael" style="display: none;"><div class="w3-row">
+    
+<div class="w3-padding w3-third"><div class="w3-card w3-white coursecard-cntr" onclick="openDB('philosophy11-course'),nv(),document.getElementById('nbcourse').classList.add('nbselected')">
+    <div style="background-image: url('https://images.unsplash.com/photo-1620662831351-9f68f76d0b9a?fm=jpg&amp;q=60&amp;w=500&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBoaWxvc29waHl8ZW58MHx8MHx8fDA%3D');" class="coursecard-img"></div><div><h6 class="coursecard-cnt"><b style="color: #956a23;">Philosophy 11</b><div style="height: 10px;"></div><span>Philosophy 11</span><br><span style="font-size: 14px;color: #737272;">AY 25-26 1stSem_SHS</span></h6></div>
+</div></div></div></article></div><div class="w3-quarter w3-padding tertiarysidebar w3-round-large">
+    
+<h4 style="font-weight: 600;margin-bottom: 0px;">Coming Up</h4><hr style="border-color: #e1e1e1;margin-top: 6px;margin-bottom: 6px;"><p style="display: block;" class="incominglist" id="inclst-nodata">Nothing for now</p>
+<div style="display: none;" class="incominglist" id="inclst-raphael">
+    <div style="padding-top: 5px;padding-bottom: 5px;"><span><i class="bi bi-rocket-takeoff mr-8"></i> <b>🎯Quiz</b></span><div class="d5"></div><span>Philosophy 11</span><div class="d5"></div><span style="color: #737272;font-size: 13px;">Due January 4, 2025 at 11:59pm</span></div>
+<hr style="border-color: #e1e1e1;margin:1px;">
+</div><br><h4 style="font-weight: 600;margin-bottom: 0px;">Recent Feedback</h4><hr style="border-color: #e1e1e1;margin-top: 6px;margin-bottom: 6px;"><p style="display: block;" class="feedback" id="fdbck-nodata">Nothing for now</p>
+<br>
+<button class="w3-button w3-light-grey w3-border w3-round" style="width: 80%;color:#393939 !important;margin-left: 10%;margin-right:10%;" onclick="openDB('grades')">View grades</button></div>
+</div>
+
+
+
+  
+  
+  
+  
+</section>
+   
+<section class="w3-container dbcontent load-anim" id="inbox" style="display: none;">
+  
+<hr class="mlgin">
+<div class="w3-row w3-margin inbox" id="inbx-nodata" style="display: block;">
+    <div class="w3-col ternarysidebar w3-round-large" style="width: 25%;">
+<br>
+</div>
+<div class="w3-col ternary" style="display: block; width: 75%;">
+    <h4 style="text-align: center; margin-top: 10px; display: block;color: #6b7780;">
+    <i class="bi bi-envelope" style="font-size: 100px;color:inherit;"></i><br>No conversations selected.
+</h4>
+</div></div>
+</section><section class="w3-container dbcontent load-anim" id="calendar" style="display: none;">
+  
+<div class="w3-row w3-margin">
+    <div class="w3-threequarter"><h5 style="display: flex;">  <u>December 2025</u></h5><hr><div style="width: 100%; overflow: auto; display: block;" class="calendar" id="clndr-nodata">
+    <table class="w3-table w3-bordered" style="width: 836.74px !important;">
+    <tbody><tr><th class="w3-center dhr">S<span class="w3-hide-small">UN</span></th><th class="w3-center dhr">M<span class="w3-hide-small">ON</span></th><th class="w3-center dhr">T<span class="w3-hide-large">u</span><span class="w3-hide-small">UE</span></th><th class="w3-center dhr">W<span class="w3-hide-small">ED</span></th><th class="w3-center dhr">T<span class="w3-hide-large">h</span><span class="w3-hide-small">HU</span></th><th class="w3-center dhr">F<span class="w3-hide-small">RI</span></th><th class="w3-center dhr">S<span class="w3-hide-small">AT</span></th></tr><tr><td class="w3-border dts date-0">30</td><td class="w3-border dts date-1">1
+</td><td class="w3-border dts date-2">2</td><td class="w3-border dts date-3">3</td><td class="w3-border dts date-4">4</td><td class="w3-border dts date-5">5</td><td class="w3-border dts date-6">6</td></tr><tr><td class="w3-border dts date-7">7</td><td class="w3-border dts date-8">8</td><td class="w3-border dts date-9">9</td><td class="w3-border dts date-10">10</td><td class="w3-border dts date-11">11</td><td class="w3-border dts date-12">12</td><td class="w3-border dts date-13">13</td></tr><tr><td class="w3-border dts date-14">14</td><td class="w3-border dts date-15">15</td><td class="w3-border dts date-16">16</td><td class="w3-border dts date-17">17</td><td class="w3-border dts date-18">18</td><td class="w3-border dts date-19">19</td><td class="w3-border dts date-20">20</td></tr><tr><td class="w3-border dts date-21">21</td><td class="w3-border dts date-22">22</td><td class="w3-border dts date-23">23</td><td class="w3-border dts date-24">24</td><td class="w3-border dts date-25">25</td><td class="w3-border dts date-26">26</td><td class="w3-border dts date-27">27</td></tr><tr><td class="w3-border dts date-28">28</td><td class="w3-border dts date-29 dt-slct">29</td><td class="w3-border dts date-30">30</td><td class="w3-border dts date-31">31</td><td class="w3-border dts date-0">1</td><td class="w3-border dts date-0">2</td><td class="w3-border dts date-0">3</td></tr></tbody>
+</table>
+</div></div><div class="w3-quarter">
+</div>
+</div>
+</section><!-- courses <!--><section class="w3-container dbcontent load-anim" id="philosophy11-course" style="display: none;">
+  <h5 class="w3-margin" style="display: flex;"><div class="bi bi-list" style="font-size: 24px;margin-right: 10px;margin-top: 1.5px;color: var(--accentcolor);"></div><span style="color: var(--accentcolor);">Philosophy 11</span>  <div class="bi bi-chevron-right" style="font-size: 12px;margin-left: 5px;margin-top: 6.5px;"></div><span style="margin-left: 5px;" id="philosophy11-header">Home</span></h5>
+<hr class="w3-margin">
+
+<div class="w3-row w3-margin">
+    <div class="w3-col ternarysidebar w3-round-large" style="width: 18%;">
+<i style="color: #737272;font-size: 13px;">AY 25-26 1stSem_SHS</i>
+<section><br style="color: var(--accentcolor);"><div style="height: 28px; color: var(--accentcolor); margin-top: 8px;" class="w3-left line-marker"></div><h6 onclick="activate(this),line1(this),openPHL('philosophy11-home'),document.getElementById('philosophy11-header').textContent = 'Home'" class="line-option" style="color: rgb(57, 57, 57);">Home</h6><h6 style="color: var(--accentcolor);" onclick="activate(this),line2(this),openPHL('philosophy11-modules'),document.getElementById('philosophy11-header').textContent = 'Modules'" class="line-option">Modules</h6>
+
+</section></div>
+<div class="w3-col philo11 ternary" id="philosophy11-home" style="display: block; width: 82%;">
+    <h1 style="font-weight: 700;">Philosophy 11</h1><hr><p>view the "modules tab" for the reviewer thanks</p>
+</div><div class="w3-col philo11 ternary" id="philosophy11-modules" style="display: none; width: 82%;">
+    <hr><div onclick="accordion('philosophy11-content-1')" class="navbtn w3-left-align courseheader" style="display: flex;margin:0px;"><i class="bi bi-caret-down-fill" style="margin-right: 8px;font-size: 11px;margin-top: 6px;"></i>
+ <b>📌Reviewers</b></div>
+<div id="philosophy11-content-1" class="w3-hide w3-show"><div class="coursemedia" style="margin:0px;border-bottom: none;">
+  <span><i class="bi bi-file-earmark-text mr-8"></i> <b>philo-semis-exam.pdf</b></span><br><a target="_blank" class="mdlnk" href="https://badmintoncorner.github.io/pvicontent/docs/philo-semis-exam.pdf">View</a>
+  
+</div><div class="coursemedia" style="margin:0px;border-bottom: none;">
+  <span><i class="bi bi-file-earmark-text mr-8"></i> <b>FINAL-EXAM-philosophy.pdf</b></span><br><a target="_blank" class="mdlnk" href="https://badmintoncorner.github.io/pvicontent/docs/FINAL-EXAM-philosophy.pdf">View</a>
+  
+</div><div class="coursemedia" style="margin:0px;padding-left: 40px;" onclick="openPHL('philosophy11-quiz1'),document.getElementById('philosophy11-header').textContent = 'Activity'">
+  <span><i class="bi bi-rocket-takeoff-fill mr-8"></i> <b>🎯Quiz</b></span><br><span class="mdlnk">January 4, 2025 | 5 pts</span>
+  
+</div></div>
+</div><div class="w3-col philo11 ternary" id="philosophy11-quiz1" style="display: none; width: 82%;">
+    <h2 style="font-weight: 700;">🎯Quiz</h2><hr><ul class="hdnlst">
+    <li><b class="mr-8">Due:</b>January 4, 2025 at 11:59pm</li>
+<li><b class="mr-8">Available:</b>December 29, 2025 at 1:49pm</li><li><b class="mr-8">Points:</b>5</li><li><b class="mr-8">Score:</b><span style="font-size: 18px;" id="philosophy11-quiz1-score">0</span> / 5</li><li><b class="mr-8">Questions:</b>5</li><li><b class="mr-8">Time Limit:</b>0 mins</li></ul><hr><h3 style="font-weight: 700;">Instructions</h3><ul>
+    
+<li>Read and analyze the questions of the test carefully.</li><li>Choose the best and most exact answer.</li></ul><p>The quiz was locked at Date.</p><hr>
+
+
+<details><summary class="w3-button w3-light-grey w3-border w3-round" style="color:#393939 !important;">Start Quiz</summary><br><div class="navbtn w3-left-align courseheader" style="margin:0px;">
+ <h5 style="margin: 0px;font-weight: 700;" class="w3-left">Question 1</h5><span class="mdlnk w3-right">1 pts</span></div><div><div class="coursemedia" style="margin:0px;background-color: #fff;">
+<span>WHY MAN SEEKS FOR THE TRUTH?</span><hr>
+<div><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="crt(this),document.getElementById('philosophy11-quiz1-score').textContent++"><input type="radio" class="mr-8">The truth makes man fulfill his rational nature.</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">The truth is essential to the life of man.</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">The truth makes man fulfill his intellectual nature.</button></div></div></div><br><div class="navbtn w3-left-align courseheader" style="margin:0px;">
+ <h5 style="margin: 0px;font-weight: 700;" class="w3-left">Question 2</h5><span class="mdlnk w3-right">1 pts</span></div><div><div class="coursemedia" style="margin:0px;background-color: #fff;">
+<span>______ enables man to discover the meaning
+of his life to act in an upright way.</span><hr>
+<div><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">Intellect</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="crt(this),document.getElementById('philosophy11-quiz1-score').textContent++"><input type="radio" class="mr-8">Wisdom</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">Knowledge</button></div></div></div><br><div class="navbtn w3-left-align courseheader" style="margin:0px;">
+ <h5 style="margin: 0px;font-weight: 700;" class="w3-left">Question 3</h5><span class="mdlnk w3-right">1 pts</span></div><div><div class="coursemedia" style="margin:0px;background-color: #fff;">
+<span>how philosophy begins?</span><hr>
+<div><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="crt(this),document.getElementById('philosophy11-quiz1-score').textContent++"><input type="radio" class="mr-8">By wonder</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">By knowledge</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">By seeking the first principles and ultimate causes</button></div></div></div><br><div class="navbtn w3-left-align courseheader" style="margin:0px;">
+ <h5 style="margin: 0px;font-weight: 700;" class="w3-left">Question 4</h5><span class="mdlnk w3-right">1 pts</span></div><div><div class="coursemedia" style="margin:0px;background-color: #fff;">
+<span>Nucleus of philosophy?</span><hr>
+<div><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">science</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">transcendentalism</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="crt(this),document.getElementById('philosophy11-quiz1-score').textContent++"><input type="radio" class="mr-8">metaphysics</button></div></div></div><br><div class="navbtn w3-left-align courseheader" style="margin:0px;">
+ <h5 style="margin: 0px;font-weight: 700;" class="w3-left">Question 5</h5><span class="mdlnk w3-right">1 pts</span></div><div><div class="coursemedia" style="margin:0px;background-color: #fff;">
+<span>It studies the<br>
+deepest and most<br>
+basic aspects of<br>
+reality.</span><hr>
+<div><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">Sciences</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="crt(this),document.getElementById('philosophy11-quiz1-score').textContent++"><input type="radio" class="mr-8">Philosophy</button><button class="w3-button w3-border-bottom w3-hover-none w3-margin-bottom" style="color:#393939!important;width: 100%;text-align:left;" onclick="incrt(this)"><input type="radio" class="mr-8">First Causes</button></div></div></div><br></details></div>
+
+</div>
+</section></div>
+</div>
+<!-- landing <!-->
+<div id="landing" class="w3-modal pvisite" style="background-color: rgb(242, 242, 242); background-size: cover; display: block;">
+    <div class="w3-modal-content" style="width:35%;">
+      <div class="w3-container" style="color: #364153;">
+        
+        
+        <h4 style="text-align:center;margin-bottom: 24px;">
+    <img src="https://badmintoncorner.github.io/pvicontent/pvilogo2.png" style="height: 75px;margin-top: 12px;"><div style="height: 10px;"></div>
+MyPVI Portal
+</h4><div>
+    <h6 class="w3-margin" style="font-weight: 700;color: #393939;">Name</h6><input class="w3-input w3-border w3-margin w3-round border-focus" type="text" style="width: 92%;color: #393939;outline: none;" id="quiz">
+</div>
+
+
+<div id="wrong" style="display: none; border: 1px solid rgb(162, 4, 4);" class="w3-margin"><section style="display: flex;"><div style="background-color: #a20404;padding-top:16px;padding-bottom: 16px;padding-left: 8px;padding-right: 8px;color: white;"><i class="bi bi-exclamation-triangle" style="font-size: 24px;color: inherit;"></i>
+</div>
+<p style="color: #a20404;margin-left: 10px;">Invalid. Kindly check your name again.</p></section></div><br><button class="navbtn w3-margin" style="background-color: var(--accentcolor);color: white;border: none;" id="checkbtn" onclick="closeAll()">Proceed</button>
+
+      </div>
+    </div>
+    <p style="font-size: 12px;color: #6b7780;margin: 20px;text-align:center;">MyPVI Portal Version 0.1.17 Beta</p>
+  </div>
+
+
+ <script src="https://badmintoncorner.github.io/pvicontent/scripts.js"></script>
+<script>
+  // crs tabz
+function openPHL(philo11Name) {
+  var i;
+  var x = document.getElementsByClassName("philo11");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(philo11Name).style.display = "block";
+}
+</script>
+<script>
+  // data
+  (function() {
+  const codeActions = {
+
+    "admin": () => {openPVI('dashboard'); document.getElementById("inclst-nodata").style.display = "block";document.getElementById("dsbcrs-nodata").style.display = "block";document.getElementById("crstab-nodata").style.display = "block";document.getElementById("fdbck-nodata").style.display = "block";document.getElementById("inbx-nodata").style.display = "block";document.getElementById("clndr-nodata").style.display = "block"; },
+    "augustus": () => {openPVI('dashboard'); document.getElementById("inclst-raphael").style.display = "block";document.getElementById("dsbcrs-raphael").style.display = "block";document.getElementById("crstab-raphael").style.display = "block";document.getElementById("fdbck-nodata").style.display = "block";document.getElementById("inbx-nodata").style.display = "block";document.getElementById("clndr-nodata").style.display = "block";},
+    "adan": () => {openPVI('dashboard'); document.getElementById("inclst-nodata").style.display = "block";document.getElementById("dsbcrs-nodata").style.display = "block";document.getElementById("crstab-nodata").style.display = "block";document.getElementById("fdbck-nodata").style.display = "block";document.getElementById("inbx-nodata").style.display = "block";document.getElementById("clndr-nodata").style.display = "block";},
+    "shekinah": () => {openPVI('dashboard'); document.getElementById("inclst-raphael").style.display = "block";document.getElementById("dsbcrs-raphael").style.display = "block";document.getElementById("crstab-raphael").style.display = "block";document.getElementById("fdbck-nodata").style.display = "block";document.getElementById("inbx-nodata").style.display = "block";document.getElementById("clndr-nodata").style.display = "block";}
+
+  };
+
+  function checkCode() {
+  const input = document.getElementById("quiz");
+  const wrongDiv = document.getElementById("wrong");
+  if (!input || !wrongDiv) return;
+
+  const enteredCode = input.value.trim();
+  const action = codeActions[enteredCode];
+
+  if (action) {
+    action();
+    wrongDiv.style.display = "none";
+  } else {
+    wrongDiv.style.display = "flex";
+  }
+}
+  function prcs() {
+  closeAll();
+  checkCode();
+}
+document.getElementById("checkbtn").addEventListener("click", prcs);
+
+document.getElementById("quiz").addEventListener("keypress", (e) => {
+  if (e.key === "Enter") prcs();
+});
+})();
+</script>
+</body></html>
