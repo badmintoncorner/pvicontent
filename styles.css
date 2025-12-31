@@ -118,6 +118,10 @@ padding: 5px;border: 1px solid #0a7bbb;border-radius: 5px;color: #0a7bbb;margin-
 padding: 5px;border: 1px solid #923b9b;border-radius: 5px;color: #923b9b;margin-left:2px;margin-right: 2px;margin-top: 5px;margin-bottom: 5px;text-align: left;
 }
 
+.cldred i, .cldgreen i, .cldblue i, .cldpurple i {
+    color: inherit !important;
+}
+
 @keyframes load {
     0% {opacity: 0%}
     50% {opacity: 100%;}
@@ -163,6 +167,18 @@ cursor: pointer; margin-left: 10px;
 
 .mr-8 {
     margin-right: 8px;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
 }
 
 input[type="radio"] {
