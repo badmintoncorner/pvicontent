@@ -1,8 +1,8 @@
 body {margin: 0px;scroll-behavior: smooth;}
 
 :root {
-     --serif: font-family: 'Spectral', serif;
-     --sans: font-family: 'IBM Plex Sans', sans-serif;
+     --serif: 'Spectral', serif;
+     --sans: 'IBM Plex Sans', sans-serif;
     }
 
 div > div > div > .srw {
@@ -12,6 +12,18 @@ div > div > div > .srw {
 div:hover > div > div > .srw {
         color: #ffffff;border: 1px solid #1e1e1e;background-color: #1e1e1e;transition: 0.4s ease;
     }
+
+.bd6 {
+font-weight: 600;
+}
+
+.bd7 {
+font-weight: 700;
+}
+
+.mt-0 {
+margin-top: 0px;
+}
 
 .k3 {
 color: #8996a0 !important;font-size: 15px;}
@@ -28,7 +40,7 @@ text-decoration: none;
   position: relative;
   display: inline-block;
   cursor: pointer;
-  color: inherit;
+  color: inherit;cursor: pointer;
 }
 
 .u4::after {
@@ -405,8 +417,16 @@ width: 38%;overflow: hidden;
     .crddark:hover {
         background-color: #484E54;transition: 0.3s
     }
+
+.xj5 {
+padding-top: 0px;
+}
     
 @media (min-width: 768px) {
+
+.xj5 {
+padding-top: 23px;
+}
 
     .sdimglf {
     margin-left: 60px;width: calc(100% - 75px)
@@ -597,11 +617,11 @@ margin-left: 15px;margin-top: 27px;font-size: 17.5px;font-weight: 500;color: #ff
 }
 
 .n5 {
-height: 92px;display: flex;padding-left:30px;padding-right: 30px;border: none;outline: none;padding-top: 6px;background-color: #ffffff00;
+height: 92px;display: flex;padding-left:30px;padding-right: 30px;border: none;outline: none;padding-top: 6px;background-color: #ffffff00 !important;
 }
 
 .n6 {
-height: 92px;display: flex;padding-left: 0px;padding-right: 30px;border: none;outline: none;padding-top: 6px;background-color: #ffffff00;
+height: 92px;display: flex;padding-left: 0px;padding-right: 30px;border: none;outline: none;padding-top: 6px;background-color: #ffffff00 !important;
 }
 
 .x4 {
@@ -613,7 +633,7 @@ color: white;font-size: 56px;font-weight: 500;cursor: pointer;text-decoration: n
 }
 
 .msc-hdr {
-font-size: 55px;font-weight: 600;animation: 0.9s infocus
+font-size: 55px;font-weight: 600;animation: 0.9s infocus;font-family: var(--serif);
 }
 
 .msc-sbhdr {
@@ -622,7 +642,7 @@ font-size: 16px;font-weight: 600;animation: 0.9s infocus;text-align: left;font-f
 
 @media (min-width: 768px) {
 .msc-hdr {
-font-size: 80px;font-weight: 600;animation: 0.9s infocus;margin-left: 45px;margin-right: 45px;
+font-size: 80px;font-weight: 600;animation: 0.9s infocus;margin-left: 45px;margin-right: 45px;font-family: var(--serif);
 }
 
 .msc-sbhdr {
@@ -642,3 +662,85 @@ font-weight: 600;margin-bottom: 0px;text-align: center;margin: 0px;
 color: white;border: 1px solid #333;padding: 10px;padding-top: 10px;margin-top: 14px;margin-bottom: 12px;border-radius: 100%;
 }
 
+.xb3 {
+margin-left: 25px;margin-right: 10px;color: #888;font-weight: 700;font-size: 17px;
+}
+
+.xz4 {
+font-size: 17px;margin-left: 15px;color: #292C2F
+}
+
+.nzl {
+height: 1px;background-color: #1e1e1e;margin-top: -3px;
+}
+
+.xpl {
+background-color: #ffffff;padding: 20px;
+}
+
+.xpl > summary { font-weight: 500;letter-spacing: 0.5px; }
+
+.xpl > div {
+margin-top: 22px;padding-left: 22px;border-left: 1px solid #ddd;font-size: 16px; }
+
+.lq1 {
+font-weight: 600;text-align: center;margin-top: 50px;margin-bottom: 25px;
+}
+
+.t8 {
+font-size: 20px;font-weight: 800;margin-right: 40px;text-decoration: none;
+}
+
+.ac3 {
+padding: 10px;padding-top: 10px;margin-top: 0px;margin-bottom: 12px;border-radius: 100%;
+}
+
+.r4 {
+font-weight: 600;margin-bottom: 10px;font-size: 26px;
+}
+
+.r3 {
+font-weight: 600;margin-bottom: 0px;
+}
+
+.r5 {
+font-weight: 500;margin-top: 20px;
+}
+
+.aa {
+padding: 10px;border-radius: 100%;
+}
+
+.at {
+margin-left: 10px;margin-top: 5px;font-weight: 500;
+}
+
+.anc {
+display: flex;margin-top: 10px;margin-bottom: 20px;cursor: pointer;user-select: none;text-decoration: none;
+}
+
+.anc2 { display: flex;margin-top: 20px;margin-bottom: 20px;cursor: pointer;user-select: none;text-decoration: none; }
+
+.y11 {
+font-weight: 500;letter-spacing: 0.5px;
+}
+
+.y12 {
+font-weight: 500;margin-top: 20px;font-weight: 600;
+}
+
+.rtc {
+text-decoration: none;padding-bottom: 10px;margin-top: 20px;margin-left: 24px;margin-right: 24px;
+}
+
+.rtco {
+font-weight: 500;margin-top: 20px;font-weight: 700;color: #292C2F;margin-bottom: 0px;font-size: 20px;
+}
+
+.qt1 {
+font-weight: 600;margin-top: -50px;padding-left: 30px;padding-top: 10px;line-height: 1.3;
+}
+
+.rgl {
+font-weight: 400 !important;
+}
