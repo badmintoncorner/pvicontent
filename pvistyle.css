@@ -624,12 +624,9 @@ height: 92px;display: flex;padding-left:30px;padding-right: 30px;border: none;ou
 height: 92px;display: flex;padding-left: 0px;padding-right: 30px;border: none;outline: none;padding-top: 6px;background-color: #ffffff00 !important;
 }
 
-.x4 {
-color: white;font-size: 42px;font-weight: 500;cursor: pointer;text-decoration: none;margin-left: 45px;margin-right: 28px;
-}
 
 .x5 {
-color: white;font-size: 56px;font-weight: 500;cursor: pointer;text-decoration: none;margin-left: 45px;margin-right: 28px;
+color: white;font-size: 42px;font-weight: 500;cursor: pointer;text-decoration: none;margin-left: 30px;margin-right: 28px;
 }
 
 .msc-hdr {
@@ -648,6 +645,11 @@ font-size: 80px;font-weight: 600;animation: 0.9s infocus;margin-left: 45px;margi
 .msc-sbhdr {
 font-size: 35px;font-weight: 600;animation: 0.9s infocus;text-align: left;margin-top: 190px;margin-left: 30px;margin-right: 100px;font-family: var(--serif);
 }
+
+.x5 {
+color: white;font-size: 56px;font-weight: 500;cursor: pointer;text-decoration: none;margin-left: 45px;margin-right: 28px;
+}
+
 }
 
 .j9 {
@@ -743,4 +745,14 @@ font-weight: 600;margin-top: -50px;padding-left: 30px;padding-top: 10px;line-hei
 
 .rgl {
 font-weight: 400 !important;
+}
+
+.g8 {
+height: 60px;position: absolute;top: 20px;left: 20px;
+}
+
+@media (min-width: 768px) {
+.g8 {
+height: 75px;position: absolute;top: 30px;left: 40px;
+}
 }
