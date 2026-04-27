@@ -1,0 +1,446 @@
+
+:root {
+    --accent: #CFAC8A;
+}
+    
+::selection {
+  color: #ffffff;
+  background: #009CDE;
+}
+
+    p {
+        font-size: 15px;
+    }
+
+    .menu {
+        padding: 8px;font-size: 16px;
+    }
+    
+    .banner {
+        height: 95px;width:100%;background-size:cover;
+    }
+
+    .clndr-width {
+width:1300px;
+}
+
+    .close {
+        margin-right: 5px;margin-top: 5px;color: #5b5555;
+    }
+    
+    .pic-container {
+        margin-left: 40px;display: flex;
+    }
+    
+    .pic {
+        height: 75px;width: 75px;
+    }
+
+    .margining {
+        margin-left: 15px;margin-right: 15px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+.sbd {
+font-weight: 700!important;
+}
+
+.bd {
+font-weight: 570!important;
+}
+
+.ubd {
+font-weight: 400!important;
+}
+
+    .mrghr {
+        margin-top: 45px;margin-bottom: 45px;
+    }
+
+.bfl {
+height: 150px
+}
+
+    .fl {
+        min-height: 150px;
+    } .spr {height: 2px;}
+
+    .av-n {
+        margin: 16px;
+    }
+
+    .av-right {
+        margin: 16px;
+    }
+
+     .av-left {
+        margin: 16px;
+    }
+
+    .cntr {
+        border-radius: 15px;padding-left: 20px;padding-top: 10px;padding-bottom: 10px;padding-right: 20px;
+    }
+
+    .grey {
+        color: #808080
+    }
+    
+    .link {
+        color: #808080;font-size: 16px;cursor: url('https://a6qoh59xf1bbrvu.github.io/slcJ8ymA7tb8yL4563p8/25UQqxjzykZWRTm/bic-pointer.png'), auto;transition: 0.2s;
+    }
+
+      .link:hover {
+        color: #000000;font-size: 16px;
+    }
+    .selected {
+            border-bottom: 2px solid var(--accent);color: var(--accent);
+        }
+         .lh2 {line-height: 2;} .lh3 {list-style-type: none;padding-left:20px;} .lnkl {text-decoration: underline; text-decoration-thickness: 0.5px;text-underline-offset: 3px;text-decoration-color: #ccc;} .icn {margin-bottom: -2px;margin-right: 3px;}   
+
+.bccard {
+    padding-top: 7px;padding-bottom: 7px;cursor: url('https://a6qoh59xf1bbrvu.github.io/slcJ8ymA7tb8yL4563p8/25UQqxjzykZWRTm/bic-pointer.png'), auto;transition: 0.2s;padding-left: 5px;
+}
+
+.chip {
+    border-radius: 25px;display:flex;margin-top: 10px;font-weight: 550;background-color: #efefef;width: fit-content;padding-right: 11px;
+}
+
+    .g2 {
+        font-size: 15px;
+    } .mt1 {padding-top: 10px;}
+    
+.k9 {
+    color: #242521!important;
+} .k6 {color: #4f4f4f!important; }
+
+    .c4 {border-spacing: 0 10px;}
+
+    .j9 {margin:0px;padding:0px;font-weight:400!important;text-align:right!important;margin-right: 5px;}
+
+     .j12 {margin:0px;padding:0px;font-weight:400!important;text-align:left!important;margin-left: 5px;}
+
+    .j8 {
+        margin:0px;padding:0px;font-weight:400!important;text-align:center;font-size: 14px;
+    }
+
+    .j2 {
+        margin:0px;padding:0px;font-weight:400!important;text-align:left;font-size: 14px;
+    }
+    
+.x8 {
+    border-top: 1px solid #ddd;
+} .nmt {margin-top: 0px;}
+
+    .v7 {
+        border-color: #ddd;margin-left: 20px;
+    }
+
+.md-header {
+font-weight: 500;font-size: 24px;
+}
+
+.md-sbhdr {
+font-size: 15px;color: #706e6e;
+}
+    
+    .bccard:hover {
+       background-color: #f8f8f8;
+    }
+
+    .mdbg {
+        background-color: #5454548c;
+    }
+
+    .br15 {
+        border-radius: 15px;
+    } .br9 {border-radius: 8px!important; }
+
+    .mdpd {
+        padding: 25px 35px;padding-bottom: 80px;
+    }
+
+.scroll-table {
+width: 100%; overflow-x: scroll; display: block;
+}
+
+.scroll-table > table {
+width:655px;transition: 0.2s;
+}
+
+.bccard-cover {
+height: 115px;width: 100%;border-radius: 15px;transition: 0.2s;background-size:cover;
+}
+    
+    @media (min-width: 768px) {
+
+.scroll-table {
+width: 100%; overflow: hidden!important; display: block;
+}
+
+.scroll-table > table {
+width: 100%;transition: 0.2s;
+}
+
+        .mdpd {
+        padding: 65px 110px;padding-bottom: 65px;
+    }
+
+.clndr-width {
+width:100%;
+}
+
+.md-header {
+font-weight: 500;font-size: 32px;
+}
+
+        .menu {
+        padding: 16px;font-size: 17px;margin-left: 5px;
+    }
+
+         .margining {
+        margin-left: 8%;margin-right: 8%;
+    }
+
+        .banner {
+        height: 145px;width:84%;margin-left: 9%;margin-right: 9%;
+    }
+
+        .pic {
+            height: 120px;width: 120px;
+        }
+
+        .pic-container {
+      margin-left: calc(8% + 30px);display: flex;
+    }
+
+.av-right {
+        margin-top: 16px;margin-left: 16px;margin-bottom: 16px;margin-right: 0px;
+    }
+
+        .av-left {
+        margin-top: 16px;margin-left: 0px;margin-bottom: 16px;margin-right: 10px;
+    }
+
+.title {
+        font-size: 36px;
+    }
+        
+    }
+
+    .wd-day {
+        width: 12.8571428571%;border: 0.5px solid #eee;padding: 6px;vertical-align: top;
+    }
+
+    .wd-hdr {
+        width: 10%;border: 0.5px solid #eee;padding: 6px;
+    }
+
+    .mdl {
+        border: 0.5px solid #eee;padding: 6px;
+    }
+
+    .m-l {
+        border-left:none!important;
+    }
+
+    .m-r {
+        border-right:none!important;
+    }
+
+    .w10 {
+        width: 10%!important;
+    }
+
+    .w15 {
+        width: 15%!important;
+    }
+
+    .w20 {
+        width: 20%!important;
+    }
+
+     .w25 {
+        width: 25%!important;
+    }
+     .w80 {
+        width: 80%!important;
+    }
+
+       .w30 {
+        width: 30%!important;
+    }
+
+    .w40 {
+        width: 40%!important;
+    }
+
+    .w50 {
+        width: 50%!important;
+    }
+
+     .w70 {
+        width: 70%!important;
+    }
+
+    .nbrd {border: none!important;}
+
+    .wknd {
+        background-color: #f6f6f6;
+    }
+
+    .wd-day > h6 {
+text-align:center;font-weight: 550;
+} .slct-dt {display: inline-block;width:24px;background-color: #F2484D;color: white!important;border-radius: 100%;height: 24px;padding: 2px 3px;}
+
+    .date {font-size:16px!important;color: inherit;text-align:inherit;}
+
+.event {
+    background-color: white;border: 1px solid #ddd;border-radius: 5px;box-shadow:0 1px 3px 0 rgba(0,0,0,0.16),0 2px 5px 0 rgba(0,0,0,0.12);padding-left: 5px;font-weight: 550;margin-top: 8px;cursor: url('https://a6qoh59xf1bbrvu.github.io/slcJ8ymA7tb8yL4563p8/25UQqxjzykZWRTm/bic-pointer.png'), auto;transition: 0.2s;
+}
+
+.event:hover {
+background-color: #f9f9f9;transition: 0.2s;
+}
+
+    .ev-mb {
+        margin-bottom:5px;
+    }
+    
+    .time {
+        font-weight: 400!important;font-size: 13px;
+    }
+
+    /* addl */
+
+    .chp {
+text-align:left;width: fit-content;padding: 1.5px 6px;border-radius: 5px;cursor:url('https://a6qoh59xf1bbrvu.github.io/slcJ8ymA7tb8yL4563p8/25UQqxjzykZWRTm/bic-pointer.png'), auto;
+}
+
+.chp-r {
+border-radius: 20px!important;
+}
+
+.c-icn {
+margin-bottom: -2px;color:inherit!important;
+}
+
+.c-txt {
+margin-left: 10px;color:inherit!important;text-decoration: none;font-size: 13.5px;
+}
+
+    .c-txt2 {
+margin-left: 0px;color:inherit!important;text-decoration: none;font-size: 13.5px;
+}
+
+    .mono {
+        font-family: monospace!important;
+    }
+
+.c-gray {
+background-color: #EBECED;color: #37352F;
+}
+
+.c-brown {
+background-color: #E9E5E3;color: #64473A;
+}
+
+.c-orange {
+background-color: #FAEBDD;color: #D9730D;
+}
+
+.c-yellow {
+background-color: #FBF3DB;color: #DFAB01;
+}
+
+.c-green {
+background-color: #DDEDEA;color: #0F7B6C;
+}
+
+.c-red {
+background-color: #FBE4E4;color: #E03E3E;
+}
+
+.c-blue {
+background-color: #DDEBF1;color: #0B6E99;
+}
+
+.c-purple {
+background-color: #EAE4F2;color: #6940A5;
+}
+
+.c-beige {
+background-color: #ECDBD6;color: #6E5A52;
+}
+
+.c-amber {
+background-color: #FADAC2;color: #886955;
+}
+
+.c-pink {
+background-color: #F4DFEB;color: #AD1A72;
+}
+
+.c-icn-gray {
+color: #A6A299!important;
+}
+
+.c-icn-brown {
+color: #9F6B53!important;
+}
+
+.c-icn-orange {
+color: #D87620!important;
+}
+
+.c-icn-yellow {
+color: #CB912F!important;
+}
+
+.c-icn-green {
+color: #448361!important;
+}
+
+.c-icn-blue {
+color: #337EA9!important;
+}
+
+.c-icn-purple {
+color: #9065B0!important;
+}
+
+.c-icn-pink {
+color: #C14C8A!important;
+}
+
+.c-icn-red {
+color: #D44C47!important;
+}
+
+    h6 { font-size: 18px; }
+a { font-size: 18px; }
+h5 { font-size: 20px; }
+
+
+@media (min-width: 768px) {
+h6 { font-size: 16px; }
+h5 { font-size: 18px; }
+
+a { font-size: 16px; }
+
+}
+
+    @keyframes opac {
+        0% {transform: scale(0.9);opacity:0;transition:0.5s ease;}
+        100% {transform: scale(1);opacity:1;transition:0.5s ease;}
+    }
+
+    .oc {
+        animation: 0.5s opac;
+    }
+
+.oc2 {
+        animation: 0.4s opac ease;
+    }
