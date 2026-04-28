@@ -91,8 +91,7 @@ GROUPINGS - green
 
 // MAY 1 -----------------
   setEvent('dt-1', `
-    <div class="event"><p>✨️ Holiday - Labor Day</p></div>
-    <div class="event ev-mb" onclick="document.getElementById('activitymodal').style.display='block'; may1lineup();">
+    <div class="event" onclick="document.getElementById('activitymodal').style.display='block'; may1lineup();">
       <p>⛪ SRDCC - DPP Novena Mass<br>
       <span class="time">4:00 p.m.</span></p>
       <div class="chp c-brown"><a class="c-txt2">Service</a></div><br>
@@ -103,7 +102,7 @@ GROUPINGS - green
   setEvent('dt-29', `
     <div class="event">
       <p>📝 Registration - BSKE (Robinsons)<br>
-      <span class="time">8:00 a.m.</span></p>
+      <span class="time">9:00 a.m.</span></p>
     </div>
   `);
 
