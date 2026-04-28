@@ -98,4 +98,12 @@ GROUPINGS - green
     </div>
   `);
 
+// APR 29 -----------------
+  setEvent('dt-29', `
+    <div class="event">
+      <p>📝 Registration - BSKE (Robinsons)<br>
+      <span class="time">8:00 a.m.</span></p>
+    </div>
+  `);
+
 });
