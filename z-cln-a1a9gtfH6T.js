@@ -102,7 +102,7 @@ GROUPINGS - green
   setEvent('dt-29', `
     <div class="event">
       <p>📝 Registration - BSKE (Robinsons)<br>
-      <span class="time">9:00 a.m.</span></p><br>
+      <span class="time">9:00 a.m.</span></p>
       <div class="chp chp-r c-red"><a class="c-txt2">● Not started</a></div><br>
     </div>
   `);
