@@ -50,6 +50,24 @@ GROUPINGS - green
  PROJECT/PT: Purple
 */
 
+// MAY 2 -----------------
+  setEvent('dt-2', `
+    <div class="event">
+      <p>🎹 SRDCC - Anticipated Mass<br>
+      <span class="time">3:30 p.m.</span></p>
+      <div class="chp c-brown"><a class="c-txt2">Service</a></div><br>
+    </div>
+  `);
+
+// MAY 16 -----------------
+  setEvent('dt-16', `
+    <div class="event">
+      <p>🎹 SRDCC - Anticipated Mass<br>
+      <span class="time">3:30 p.m.</span></p>
+      <div class="chp c-brown"><a class="c-txt2">Service</a></div><br>
+    </div>
+  `);
+      
       // APR 30 -----------------
   setEvent('dt-30', `
     <div class="event">
