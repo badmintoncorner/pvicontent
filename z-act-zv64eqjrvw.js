@@ -43,7 +43,8 @@ function may1lineup() {
     type: { text: "Service", class: "c-brown" },
     format: { text: "Individual", class: "c-yellow" },
     instruction: `
-<h5 class="bd">🤍 MAY 1 LINEUP</h5> 🤍<b> Entrance</b>: MAGALAK TAYONG LAHAT <br><br> KYRIE - JUBILEE <br><br> SALMONG TUGUNAN<br>Poon kami’y pagpalain<br>at iyong pagtagumpayin. <br><br> ALLELUIA (Panganiban)<br>Manunubos naming mahal,<br>salamat sa ‘yong patnubay<br>at paglingap araw-araw. <br><br> 🤍<b>OFFERTORY</b><br> - Tanggapin Mo, O Panginoon <br><br> 🤍 SANTO/AKLAMASYON/AMEN/AMA NAMIN/SAPAGKAT/KORDERO - Jubilee <br><br> 🤍<b>COMMUNION</b><br> - Mapag-iisang Bayan <br> - Ito ang Araw <br><br> 🤍<b>RECESSIONAL</b><br> - Ito ang Bagong Araw
+<h5 class="bd">🤍 MAY 1 LINEUP</h5> 🤍<b> Entrance</b>: MAGALAK TAYONG LAHAT <br><br> KYRIE - JUBILEE <br><br> <b>SALMONG TUGUNAN</b><br>Poon kami’y pagpalain<br>at iyong pagtagumpayin. <br><br> <b>ALLELUIA</b> (Panganiban)<br>Manunubos naming mahal,<br>salamat sa ‘yong patnubay<br>at paglingap araw-araw. <br><br> 🤍<b>OFFERTORY</b><br> - Tanggapin Mo, O Panginoon <br><br> 🤍 SANTO/AKLAMASYON/AMEN/AMA NAMIN/SAPAGKAT/KORDERO - Jubilee <br><br> 🤍<b>COMMUNION</b><br> - Mapag-iisang Bayan <br> - Ito ang Araw <br><br> <b>🕯CANDLE OFFERING</b><br> Dalit sa Mahal na Birhen Divina Pastora (Delgado) <br></br>🤍<b>RECESSIONAL</b><br> 
+-Viva La Virgen Divina Pastora!
 `
   });
 }
