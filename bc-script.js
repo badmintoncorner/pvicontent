@@ -186,3 +186,30 @@ function clearCourse() {
     }
   });
 }
+
+// CLEAR ====
+
+function clearActivity() {
+  setActivity({});
+}
+
+// testing generic INFORMATION for juan dl cruz - capstone project purposes
+
+// DATE
+function daysAgo(id, month, day) {
+const el = document.getElementById(id);
+if (!el) return;
+const d = new Date();
+const t = new Date(d.getFullYear(), month - 1, day);
+let diff = Math.floor((d - t) / (1000 * 60 * 60 * 24));
+el.textContent =
+diff === 0
+      ? "Due today"
+      : diff > 0
+      ? `Overdue`
+      : `Due in ${-diff} day${diff < -1 ? "s" : ""}`;
+}
+window.addEventListener("DOMContentLoaded", () => {
+  daysAgo("apr24", 4, 24);
+  daysAgo("apr23", 4, 23);
+});
