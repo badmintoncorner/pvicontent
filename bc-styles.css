@@ -89,7 +89,7 @@ height: 150px
     }
     
     .link {
-        color: #808080;font-size: 16px;cursor: url('https://a6qoh59xf1bbrvu.github.io/slcJ8ymA7tb8yL4563p8/25UQqxjzykZWRTm/bic-pointer.png'), auto;transition: 0.2s;
+        color: #808080;font-size: 16px;cursor: pointer;transition: 0.2s;
     }
 
       .link:hover {
@@ -101,7 +101,7 @@ height: 150px
          .lh2 {line-height: 2;} .lh3 {list-style-type: none;padding-left:20px;} .lnkl {text-decoration: underline; text-decoration-thickness: 0.5px;text-underline-offset: 3px;text-decoration-color: #ccc;} .icn {margin-bottom: -2px;margin-right: 3px;}   
 
 .bccard {
-    padding-top: 7px;padding-bottom: 7px;cursor: url('https://a6qoh59xf1bbrvu.github.io/slcJ8ymA7tb8yL4563p8/25UQqxjzykZWRTm/bic-pointer.png'), auto;transition: 0.2s;padding-left: 5px;
+    padding-top: 7px;padding-bottom: 7px;cursor: pointer;transition: 0.2s;padding-left: 5px;
 }
 
 .chip {
@@ -298,7 +298,7 @@ text-align:center;font-weight: 550;
     .date {font-size:16px!important;color: inherit;text-align:inherit;}
 
 .event {
-    background-color: white;border: 1px solid #ddd;border-radius: 5px;box-shadow:0 1px 3px 0 rgba(0,0,0,0.16),0 2px 5px 0 rgba(0,0,0,0.12);padding-left: 5px;font-weight: 550;margin-top: 8px;cursor: url('https://a6qoh59xf1bbrvu.github.io/slcJ8ymA7tb8yL4563p8/25UQqxjzykZWRTm/bic-pointer.png'), auto;transition: 0.2s;
+    background-color: white;border: 1px solid #ddd;border-radius: 5px;box-shadow:0 1px 3px 0 rgba(0,0,0,0.16),0 2px 5px 0 rgba(0,0,0,0.12);padding-left: 5px;font-weight: 550;margin-top: 8px;cursor: pointer;transition: 0.2s;
 }
 
 .event:hover {
@@ -316,7 +316,7 @@ background-color: #f9f9f9;transition: 0.2s;
     /* addl */
 
     .chp {
-text-align:left;width: fit-content;padding: 1.5px 6px;border-radius: 5px;cursor:url('https://a6qoh59xf1bbrvu.github.io/slcJ8ymA7tb8yL4563p8/25UQqxjzykZWRTm/bic-pointer.png'), auto;
+text-align:left;width: fit-content;padding: 1.5px 6px;border-radius: 5px;cursor:pointer;
 }
 
 .chp-r {
