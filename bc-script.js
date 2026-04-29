@@ -69,17 +69,6 @@ function refresh() {
   });
 }
 
-// CLEAR ----------------------------
-
-function clearCourse() {
-document.getElementById("courseheader").innerHTML = "-";
-document.getElementById("coursetitle").innerHTML = "-";
-document.getElementById("coursedetails").innerHTML = "-";
-document.getElementById("professor").innerHTML = "-";
-document.getElementById("courseschedule").innerHTML = "-";
-
-}
-
 // HELPER -------------
 
 function createChip(text, colorClass, extraClass = "") {
@@ -178,4 +167,22 @@ function setActivity({
   `;
 
   document.getElementById("activityinstruction").innerHTML = instruction;
+}
+
+// CLEAR ----------------------------
+
+function clearCourse() {
+  document.getElementById("courseheader").innerHTML = "-";
+  document.getElementById("coursetitle").innerHTML = "-";
+  document.getElementById("coursedetails").innerHTML = "-";
+  document.getElementById("professor").innerHTML = "-";
+  document.getElementById("courseschedule").innerHTML = "-";
+
+  const categories = ['tname', 'tdate', 'tlink', 'cname', 'cstatus', 'cdue', 'cformat', 'ctype', 'cscore'];
+  categories.forEach(cat => {
+    for (let i = 0; i <= 10; i++) {
+      const el = document.getElementById(cat + i);
+      if (el) el.innerHTML = '-';
+    }
+  });
 }
