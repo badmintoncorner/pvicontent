@@ -181,7 +181,7 @@ function philosophy() {
    });
 }
 
-// SHORTCUT:XPNS
+// SHORTCUT:EXPENSE
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <th class="mdl m-l w30"><p class="k9 j12">Transportation<br>Mr. Donut<br>Woonmart<br>National Bookstore</p></th>
 <th class="mdl w30"></th>
 <th class="mdl w20"><p class="k9 j12">April 29, 2026</p></th>
-<th class="mdl w20 m-r"><p class="k9 j12">₱ 33.00<br>₱ 60.00<br>₱ 95.00<br>₱ 39.00</p><hr><p><b>₱ 227.00</b></p></th>
+<th class="mdl w20 m-r"><p class="k9 j12">₱ 33.00<br>₱ 60.00<br>₱ 95.00<br>₱ 39.00</p><hr><p class="k9 j12 bd">₱ 227.00</p></th>
 </tr>
 </tbody>
 </table>
