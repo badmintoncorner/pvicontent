@@ -193,6 +193,15 @@ function clearActivity() {
   setActivity({});
 }
 
+function testCourse() {
+  setCourse({
+    tasks: [
+    ],
+    works: [
+    ]
+   });
+}
+
 // testing generic INFORMATION for juan dl cruz - capstone project purposes
 
 // DATE
