@@ -35,6 +35,27 @@ search.addEventListener("input", function () {
 
 // SAMPLE
 
+function acClearAll() {
+document.getElementById("atn-june").className = "btn2 f12 m-r";
+  document.getElementById("atn-july").className = "btn f12 m-r";
+  document.getElementById("atn-august").className = "btn f12 m-r";
+}
+
+function acjune() {
+acClearAll();
+  document.getElementById("atn-june").className = "btn f12 m-r";
+}
+
+function acjuly() {
+acClearAll();
+  document.getElementById("atn-july").className = "btn f12 m-r";
+}
+
+function acaugust() {
+acClearAll();
+  document.getElementById("atn-august").className = "btn f12 m-r";
+}
+
 function clearAttendance() {
     const ids = [
         "acarEA","acarET","acarA","acarT","acarMP",
@@ -79,7 +100,7 @@ function clearAttendance() {
 }
 
 function june() {
-  clearAttendance();
+  clearAttendance();acjune();
 document.getElementById("magnoA").innerHTML = "1";
   document.getElementById("malonesA").innerHTML = "1";
   document.getElementById("magnoT").innerHTML = "1";
@@ -92,7 +113,7 @@ document.getElementById("magnoA").innerHTML = "1";
 }
 
 function july() {
-  clearAttendance();
+  clearAttendance();acjuly();
   document.getElementById("leyesaA").innerHTML = "2";
    document.getElementById("leyesaT").innerHTML = "1";
    document.getElementById("hidalgoT").innerHTML = "1";
@@ -108,7 +129,7 @@ function july() {
 }
 
 function august() {
-clearAttendance();
+clearAttendance();acaugust();
 document.getElementById("deleonA").innerHTML = "1";
 document.getElementById("catapangJMEA").innerHTML = "1";
 document.getElementById("boncalosA").innerHTML = "1";
