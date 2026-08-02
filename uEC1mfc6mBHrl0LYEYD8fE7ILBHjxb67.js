@@ -37,8 +37,8 @@ search.addEventListener("input", function () {
 
 function acClearAll() {
 document.getElementById("atn-june").className = "btn2 f12 m-r";
-  document.getElementById("atn-july").className = "btn f12 m-r";
-  document.getElementById("atn-august").className = "btn f12 m-r";
+  document.getElementById("atn-july").className = "btn2 f12 m-r";
+  document.getElementById("atn-august").className = "btn2 f12 m-r";
 }
 
 function acjune() {
