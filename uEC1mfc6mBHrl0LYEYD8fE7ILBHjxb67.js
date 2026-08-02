@@ -35,6 +35,33 @@ search.addEventListener("input", function () {
 
 // SAMPLE
 
+function june() {
+document.getElementById("magnoA").innerHTML = "1";
+  document.getElementById("malonesA").innerHTML = "1";
+  document.getElementById("magnoT").innerHTML = "1";
+   document.getElementById("lanoA").innerHTML = "1";
+   document.getElementById("acarT").innerHTML = "1";
+   document.getElementById("vergaraLT").innerHTML = "4";
+   document.getElementById("banaagA").innerHTML = "1";
+   document.getElementById("decastroGVT").innerHTML = "1";
+   document.getElementById("decastroFLT").innerHTML = "1";
+}
+
+function july() {
+  document.getElementById("leyesaA").innerHTML = "2";
+   document.getElementById("leyesaT").innerHTML = "1";
+   document.getElementById("hidalgoT").innerHTML = "1";
+  document.getElementById("magnoA").innerHTML = "1";
+  document.getElementById("magnoT").innerHTML = "1";
+  document.getElementById("recintoA").innerHTML = "2";
+  document.getElementById("banaagA").innerHTML = "1";
+  document.getElementById("delavegaA").innerHTML = "1";
+  document.getElementById("fontillasA").innerHTML = "1";
+  document.getElementById("acarT").innerHTML = "1";
+  document.getElementById("boncalosA").innerHTML = "1";
+  document.getElementById("jugnoT").innerHTML = "1";
+}
+
 function august() {
 
 document.getElementById("deleonA").innerHTML = "1";
