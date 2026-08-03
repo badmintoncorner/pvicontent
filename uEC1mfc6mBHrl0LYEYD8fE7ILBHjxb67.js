@@ -104,12 +104,16 @@ function june() {
 document.getElementById("magnoA").innerHTML = "1";
   document.getElementById("malonesA").innerHTML = "1";
   document.getElementById("magnoT").innerHTML = "1";
-   document.getElementById("lanoA").innerHTML = "1";
+   document.getElementById("lanoA").innerHTML = "2";
+  document.getElementById("lanoEA").innerHTML = "5";
    document.getElementById("acarT").innerHTML = "1";
    document.getElementById("vergaraLT").innerHTML = "4";
+  document.getElementById("vergaraTMET").innerHTML = "1";
+  document.getElementById("vergaraLET").innerHTML = "1";
    document.getElementById("banaagA").innerHTML = "1";
    document.getElementById("decastroGVT").innerHTML = "1";
    document.getElementById("decastroFLT").innerHTML = "1";
+  document.getElementById("andalA").innerHTML = "1";
 }
 
 function july() {
